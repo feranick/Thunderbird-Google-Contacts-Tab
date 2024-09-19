@@ -1,9 +1,9 @@
-# Google Keep Tab
-Unofficial Google Contacts add-on for Thunderbird, it adds a button that opens a Google Keep tab in Thunderbird.
+# Google Contacts Tab
+Unofficial Google Contacts add-on for Thunderbird, it adds a button that opens a Google Contacts tab in Thunderbird.
 The [home page](https://addons.mozilla.org/thunderbird/addon/thundercontacts/) of the extension contains some pictures and reviews.
 
 #### Installing 
-Simply search for Google Keep inside Thunderbird and the addon should show up.
+A new Google Contacts icon should appear in the top-right corner of Thunderbird. Click to open.
 
 #### Installing from sources
 Download the repository, zip it, rename it to Google-Contacts-Tab.xpi and choose install addon from file in Thunderbird.

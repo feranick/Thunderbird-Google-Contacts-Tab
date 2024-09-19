@@ -8,9 +8,9 @@
   },
   "name": "Google Contacts Tab",
   "description": "__MSG_extensionDescription__",
-  "author": "[Garoe Dorta]",
+  "author": "[Nicola Ferralis]",
   "homepage_url": "https://github.com/feranick/Thunderbird-Google-Contacts-Tab/",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "default_locale": "en",
   "icons": {
     "48": "skin/google_contacts_icon.svg",
