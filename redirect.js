@@ -56,3 +56,25 @@ browser.menus.onClicked.addListener((info, tab) => {
     }
   }
 });
+
+// Add button to message display panel
+browser.messageDisplayAction.onClicked.addListener(async (tab) => {
+  try {
+    // Get the currently displayed message
+    const message = await browser.messageDisplay.getDisplayedMessage(tab.id);
+    
+    if (message && message.author) {
+      // The author field usually looks like: "Name <email@domain.com>" or just "email@domain.com"
+      // A simple regex to extract just the email address
+      const emailMatch = message.author.match(/<([^>]+)>/);
+      const query = emailMatch ? emailMatch[1] : message.author;
+
+      const searchUrl = `https://contacts.google.com/search/${encodeURIComponent(query.trim())}`;
+      browser.tabs.create({ url: searchUrl });
+    } else {
+      console.warn("Google Contacts Tab: Could not read message or author field.", message);
+    }
+  } catch (error) {
+    console.error("Google Contacts Tab Error:", error);
+  }
+});
