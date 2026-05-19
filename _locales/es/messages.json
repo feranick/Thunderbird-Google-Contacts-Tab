@@ -1,6 +1,22 @@
 {
+  "extensionName": {
+    "message": "Pestaña de Google Contacts",
+    "description": "Name of the extension."
+  },
   "extensionDescription": {
-    "message": "Añade un botón que abre Google Contacts en una pestaña nueva.",
+    "message": "Añade un botón para abrir Google Contacts en una nueva pestaña.",
     "description": "Description of the extension."
+  },
+  "toolbarButtonTitle": {
+    "message": "Google Contacts",
+    "description": "Hover title for the Spaces Toolbar button."
+  },
+  "messageDisplayTitle": {
+    "message": "Google Contacts",
+    "description": "Hover title for the message display action button."
+  },
+  "contextMenuTitle": {
+    "message": "Buscar en Google Contacts",
+    "description": "Context menu text for searching."
   }
 }

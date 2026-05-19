@@ -1,5 +1,5 @@
 browser.spacesToolbar.addButton('GoogleContacts', {
-    title: "Google Contacts",
+    title: browser.i18n.getMessage("toolbarButtonTitle"),
     defaultIcons: "skin/google_contacts_icon.svg",
     url: "https://contacts.google.com/"
 });
@@ -23,7 +23,7 @@ browser.webRequest.onBeforeSendHeaders.addListener(
 // 1. Change contexts to "all" so the menu always appears
 browser.menus.create({
   id: "search-google-contacts",
-  title: "Search in Google Contacts",
+  title: browser.i18n.getMessage("contextMenuTitle"),
   contexts: ["all"] 
 });
 

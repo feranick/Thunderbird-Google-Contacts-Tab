@@ -1,6 +1,22 @@
 {
+  "extensionName": {
+    "message": "Google Contacts-Tab",
+    "description": "Name of the extension."
+  },
   "extensionDescription": {
-    "message": "Fügt eine Schaltfläche zum Öffnen von Google Contacts in einem neuen Tab hinzu.",
+    "message": "Fügt eine Schaltfläche hinzu, um Google Contacts in einem neuen Tab zu öffnen.",
     "description": "Description of the extension."
+  },
+  "toolbarButtonTitle": {
+    "message": "Google Contacts",
+    "description": "Hover title for the Spaces Toolbar button."
+  },
+  "messageDisplayTitle": {
+    "message": "Google Contacts",
+    "description": "Hover title for the message display action button."
+  },
+  "contextMenuTitle": {
+    "message": "In Google Contacts suchen",
+    "description": "Context menu text for searching."
   }
 }

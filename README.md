@@ -1,6 +1,6 @@
 # Google Contacts Tab
 Unofficial Google Contacts add-on for Thunderbird, it adds a button in Spaces that opens a Google Contacts tab in Thunderbird.
-The [home page](https://addons.mozilla.org/thunderbird/addon/thundercontacts/) of the extension contains some pictures and reviews.
+The [home page](https://addons.thunderbird.net/en-US/thunderbird/addon/google-contacts-spaces-tab/) of the extension contains the latest code.
 
 #### Installing 
 A new Google Contacts icon should appear in the Spaces Toolbar of Thunderbird. Click to open.
