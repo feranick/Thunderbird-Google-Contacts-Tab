@@ -8,7 +8,7 @@ browser.webRequest.onBeforeSendHeaders.addListener(
   function(details) {
     for (let header of details.requestHeaders) {
       if (header.name.toLowerCase() === "user-agent") {
-        header.value = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0";
+        header.value = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/151.0";
         break;
       }
     }
@@ -18,13 +18,13 @@ browser.webRequest.onBeforeSendHeaders.addListener(
   ["blocking", "requestHeaders"]
 );
 
-// --- Updated Context Menu Code ---
+// --- Cleaned Context Menu Code ---
 
-// 1. Change contexts to "all" so the menu always appears
+// 1. Explicitly list where the menu SHOULD appear, avoiding "attachment" entirely
 browser.menus.create({
   id: "search-google-contacts",
   title: browser.i18n.getMessage("contextMenuTitle"),
-  contexts: ["all"] 
+  contexts: ["selection", "link", "page", "message_list"] 
 });
 
 // 2. Handle the click
